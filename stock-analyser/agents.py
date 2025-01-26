@@ -13,7 +13,6 @@ agent = Agent(
     tools=[DuckDbTools()],
     model=Gemini(id="gemini-2.0-flash-exp"),
     #model=OpenAIChat(id="gpt-4o"),
-    system_prompt=SYSTEM_PROMPT,
     show_tool_calls=True,
     instructions=[
       """When running select queries, make sure that you put all field names 
