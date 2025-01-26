@@ -1,12 +1,16 @@
 from phi.agent import Agent
 from phi.tools.duckdb import DuckDbTools
 from phi.storage.agent.sqlite import SqlAgentStorage
+from phi.model.google import Gemini
 from phi.model.openai import OpenAIChat
 from phi.run.response import RunEvent, RunResponse
 
+os.environ['GOOGLE_API_KEY'] = "AIzaSyCmQy3CSLnSanxsLvss0l3qPE-rYK7wJUo" #st.secrets['GEMINI_KEY']
+
 agent = Agent(
     tools=[DuckDbTools()],
-    model=OpenAIChat(id="gpt-4o"),
+    model=Gemini(id="gemini-2.0-flash-exp"),
+    #model=OpenAIChat(id="gpt-4o"),
     show_tool_calls=True,
     instructions=[
       """When running select queries, make sure that you put all field names 
