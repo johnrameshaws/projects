@@ -4,6 +4,7 @@ from phi.storage.agent.sqlite import SqlAgentStorage
 from phi.model.google import Gemini
 from phi.model.openai import OpenAIChat
 from phi.run.response import RunEvent, RunResponse
+from constants import SYSTEM_PROMPT
 
 os.environ['GOOGLE_API_KEY'] = "AIzaSyCmQy3CSLnSanxsLvss0l3qPE-rYK7wJUo" #st.secrets['GEMINI_KEY']
 
@@ -11,6 +12,7 @@ agent = Agent(
     tools=[DuckDbTools()],
     model=Gemini(id="gemini-2.0-flash-exp"),
     #model=OpenAIChat(id="gpt-4o"),
+    system_prompt=SYSTEM_PROMPT,
     show_tool_calls=True,
     instructions=[
       """When running select queries, make sure that you put all field names 
