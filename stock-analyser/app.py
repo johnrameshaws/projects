@@ -5,7 +5,7 @@ import pandas as pd
 from datetime import date, timedelta
 
 # List of stock tickers
-tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "NFLX", "ADBE", "PYPL"]
+tickers = ["AAPL", "MSFT", "GOOGL", "AMZN", "TSLA", "META", "NVDA", "NFLX", "ADBE"]
 
 # Define the timeframes
 timeframes = {
