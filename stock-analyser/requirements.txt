@@ -89,3 +89,6 @@ yfinance==0.2.51
 duckdb
 sqlalchemy
 openai
+yfinance
+matplotlib
+pandas
