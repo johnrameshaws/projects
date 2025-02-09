@@ -1,1 +1,16 @@
+pypdf
 pydantic-ai
+typing
+chromadb
+google-genai
+sqlalchemy
+tantivy
+lancedb
+agno
+duckduckgo-search
+streamlit
+tavily-python
+openai
+yfinance
+matplotlib
+
