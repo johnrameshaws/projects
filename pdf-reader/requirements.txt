@@ -3,6 +3,7 @@ pydantic-ai
 typing
 chromadb
 google-genai
+google-generativeai
 sqlalchemy
 tantivy
 lancedb
